@@ -594,7 +594,8 @@ namespace xiloader::polrelay
             return abort(errorText(ret));
         }
 
-        if (!listen(listeners[0], kIrcPort, kIrcPort) || !listen(listeners[1], kProfilePort, profilePort))
+        // If your VPN uses 51241 for IRC, update the 3rd argument for listeners[0]:
+        if (!listen(listeners[0], kIrcPort, 51241) || !listen(listeners[1], kProfilePort, profilePort))
         {
             return abort(std::to_string(WSAGetLastError()));
         }

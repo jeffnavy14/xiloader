@@ -53,7 +53,7 @@ namespace globals
     uint16_t               g_LoginDataPort     = 54230;                       // Login server data port to connect to
     uint16_t               g_LoginViewPort     = 54001;                       // Login view port to connect to
     uint16_t               g_LoginAuthPort     = 54231;                       // Login auth port to connect to
-    uint16_t               g_ProfilePort       = 51220;                       // PlayOnline profile server port polcore connects to
+    uint16_t               g_ProfilePort       = 51221;                       // PlayOnline profile server port polcore connects to
     std::string            g_Username          = "";                          // The username being logged in with.
     std::string            g_Password          = "";                          // The password being logged in with.
     std::string            g_OtpCode           = "";                          // The OTP code the user input
